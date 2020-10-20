@@ -1,18 +1,25 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
+import grey from '@material-ui/core/colors/grey';
 import AppBar from '@material-ui/core/AppBar';
-import EmailIcon from '@material-ui/icons/Email';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
+    padding: '20px',
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#E4DAC2',
   },
-  icons: {
-    display: 'flex',
-    alignItems: 'center',
+  titles: {
+    // display: 'flex',
+    // border: 'solid',
+    paddingRight: '20px',
+    // justifyContent: 'space-between',
+  },
+  contact: {
+    // display: 'flex',
   },
 }));
 
@@ -20,20 +27,21 @@ const Navbar = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.navbar}>
+    <div className={classes.root}>
     <AppBar position="fixed">
-      <div>
-      <ul>
-        <a href="#home" data-nav-section="home">Introduction</a>
-        <a href="#about" data-nav-section="about">About</a>
-        <a href="#timeline" data-nav-section="timeline">Timeline</a>
-      </ul>
+      {/* <ul> */}
+      <div className={classes.navbar}>
+        <div >
+        <span className={classes.titles}><Link href="#home" style={{ color: grey[800] }}>Home</Link></span>
+        <span className={classes.titles}><Link href="#about" style={{ color: grey[800] }}>About</Link></span>
+        <span className={classes.titles}><Link href="#skills" style={{ color: grey[800] }}>Skills</Link></span>
+        <span className={classes.titles}><Link href="#projects" style={{ color: grey[800] }}>Projects</Link></span>
       </div>
-      <div className={classes.icons}>
-        <a href="mailto:victorialee72@live.com"><EmailIcon /></a>
-        <a href="https://www.linkedin.com/in/victoriamlee1/" target="_blank"><LinkedInIcon /></a>
-        <a href="https://github.com/victoriamlee" target="_blank"><GitHubIcon /></a>
+      <div className={classes.contact}>
+      <Link href="#contact" style={{ color: grey[800] }}>Contact</Link>
     </div>
+    </div>
+      {/* </ul> */}
     </AppBar>
     </div>
   );
