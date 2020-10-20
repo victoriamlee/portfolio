@@ -9,10 +9,12 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: '80px',
+    marginTop: '59px',
     display: 'flex',
     flexDirection: 'column',
     border: 'solid',
+    backgroundColor: '#E4DAC2',
+    color: grey[800],
   },
   email: {
     display: 'flex',
