@@ -11,6 +11,7 @@ function App() {
     return (
       <div id="colorlib-page">
         <div id="container-wrap">
+          <Navbar />
 		<Sidebar></Sidebar>
 		<div id="colorlib-main">
 			<Introduction></Introduction>
