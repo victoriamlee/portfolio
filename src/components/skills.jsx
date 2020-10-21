@@ -26,17 +26,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
   },
-  // pic: {
-  //   height: 300,
-  //   width: 300,
-  // },
   info: {
     backgroundColor: '#FCF9F2',
     marginTop: 80,
     marginBottom: 50,
     padding: 300,
     paddingTop: 20,
-    paddingBottom: 400,
+    paddingBottom: 150,
     width: '50%',
     display: 'flex',
     flexDirection: 'column',
