@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   info: {
     // border: 'solid',
     marginTop: 220,
+    marginBottom: 50,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
