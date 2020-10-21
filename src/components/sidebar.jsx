@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import grey from '@material-ui/core/colors/grey';
+
 import CardMedia from '@material-ui/core/CardMedia';
 import Victoria from '../docs/Victoria.JPG';
 import EmailIcon from '@material-ui/icons/Email';
@@ -109,9 +110,6 @@ const Sidebar = () => {
       <div>
       <h1>Hi I'm Victoria Lee</h1>
       <h2>I'm also a full stack developer</h2>
-      {/* <span className={classes.email}><EmailIcon />victorialee72@live.com</span>
-      <span className={classes.linkedin}><LinkedInIcon />victoriamlee1</span>
-      <span className={classes.github}><GitHubIcon />victoriamlee</span> */}
 
 <ButtonBase
           className={classes.image}
