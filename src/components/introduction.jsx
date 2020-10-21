@@ -5,7 +5,7 @@ import Victoria from '../docs/Victoria.JPG';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: '59px',
+    // marginTop: '59px',
     // width: 600,
     // height: 600,
     // // marginLeft: 120,
