@@ -5,9 +5,9 @@ import avatar from '../docs/avatar.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    border: 'solid',
+    // border: 'solid',
     paddingTop: 50,
-    paddingBottom: 50,
+    paddingBottom: 60,
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
@@ -24,14 +24,14 @@ const useStyles = makeStyles((theme) => ({
     // marginLeft: 120,
   },
   info: {
-    border: 'solid',
+    // border: 'solid',
     marginTop: 220,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     backgroundColor: '#E4DAC2',
-    padding: 300,
+    padding: 250,
   },
 }));
 
