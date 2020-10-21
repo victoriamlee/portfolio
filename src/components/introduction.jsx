@@ -6,14 +6,17 @@ import Victoria from '../docs/Victoria.JPG';
 const useStyles = makeStyles((theme) => ({
   root: {
     // marginTop: '59px',
-    // width: 600,
-    // height: 600,
+    width: '90%',
+    height: 'auto',
+    // border: 'solid',
     // // marginLeft: 120,
   },
   image: {
-    width: 600,
-    height: 600,
+    // width: '100%',
+    height: '100vh',
     // marginLeft: 120,
+    maxWidth: '100%',
+    maxHeight: '100%',
   },
 }));
 
