@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import grey from '@material-ui/core/colors/grey';
 
 import AppBar from '@material-ui/core/AppBar';
@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: '#E4DAC2',
+    backgroundAttachment: 'local',
   },
   titles: {
     paddingRight: '20px',
@@ -27,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className={classes.root}>
-    <AppBar position="fixed">
+    <AppBar position="static"  style={{ background: 'transparent', boxShadow: 'none'}}>
       {/* <ul> */}
       <div className={classes.navbar}>
         <div >

@@ -3,15 +3,19 @@ import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import grey from '@material-ui/core/colors/grey';
+import CardMedia from '@material-ui/core/CardMedia';
+import Victoria from '../docs/Victoria.JPG';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: '59px',
+    // marginTop: '59px',
+    padding: 170,
     display: 'flex',
-    flexDirection: 'column',
+    alignItems: 'center',
+    // flexDirection: 'column',
     // border: 'solid',
     backgroundColor: '#E4DAC2',
     color: grey[800],
@@ -33,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
     height: 90,
     [theme.breakpoints.down('xs')]: {
       width: '100% !important', // Overrides inline-style
-      height: 90,
     },
     '&:hover, &$focusVisible': {
       zIndex: 1,
@@ -101,6 +104,7 @@ const Sidebar = () => {
 
   return (
     <div className={classes.root}>
+      <div>
       <h1>Hi I'm Victoria Lee</h1>
       <h2>I'm also a full stack developer</h2>
       {/* <span className={classes.email}><EmailIcon />victorialee72@live.com</span>
@@ -110,6 +114,9 @@ const Sidebar = () => {
 <ButtonBase
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: '40%',
+          }}
         >
           <span
             className={classes.imageSrc}
@@ -128,6 +135,14 @@ const Sidebar = () => {
             </Typography>
           </span>
         </ButtonBase>
+        </div>
+        {/* <div>
+        <CardMedia
+              className={classes.pic}
+              image={Victoria}
+              title="Victoria Lee"
+            />
+        </div> */}
     </div>
   );
 }
