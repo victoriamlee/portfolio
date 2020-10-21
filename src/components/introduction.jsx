@@ -6,9 +6,9 @@ import Victoria from '../docs/Victoria.JPG';
 const useStyles = makeStyles((theme) => ({
   root: {
     // marginTop: '59px',
-    width: '100%',
+    width: '90%',
     height: 'auto',
-    border: 'solid',
+    // border: 'solid',
     // // marginLeft: 120,
   },
   image: {
