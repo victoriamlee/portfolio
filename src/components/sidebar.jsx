@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '59px',
     display: 'flex',
     flexDirection: 'column',
-    border: 'solid',
+    // border: 'solid',
     backgroundColor: '#E4DAC2',
     color: grey[800],
   },
@@ -30,10 +30,10 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     position: 'relative',
-    height: 100,
+    height: 90,
     [theme.breakpoints.down('xs')]: {
       width: '100% !important', // Overrides inline-style
-      height: 100,
+      height: 90,
     },
     '&:hover, &$focusVisible': {
       zIndex: 1,
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         opacity: 0,
       },
       '& $imageTitle': {
-        border: '4px solid currentColor',
+        border: '3px solid currentColor',
       },
     },
   },
@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 10,
   },
   imageMarked: {
-    height: 3,
+    height: 2,
     width: 18,
     backgroundColor: grey[800],
     position: 'absolute',
@@ -123,7 +123,7 @@ const Sidebar = () => {
               className={classes.imageTitle}
               style={{ color: grey[800] }}
             >
-              <h3>About me</h3>
+              <p>About me</p>
               <span className={classes.imageMarked} />
             </Typography>
           </span>
